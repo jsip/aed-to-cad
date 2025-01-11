@@ -1,26 +1,30 @@
 {
-    "name": "chrome-extension-svelte-typescript-boilerplate",
-    "description": "Boilerplate for Chrome Extension Svelte Typescript project",
-    "version": "1.0.0",
-    "type": "module",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/nekitcorp/chrome-extension-svelte-typescript-boilerplate.git"
-    },
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
-    },
-    "devDependencies": {
-        "@crxjs/vite-plugin": "2.0.0-beta.29",
-        "@sveltejs/vite-plugin-svelte": "5.0.3",
-        "@tsconfig/svelte": "5.0.4",
-        "@types/chrome": "0.0.289",
-        "svelte": "5.16.2",
-        "svelte-check": "4.1.1",
-        "tslib": "2.8.1",
-        "typescript": "5.7.2",
-        "vite": "6.0.7"
-    }
+  "name": "aed-to-cad-chrome-extension",
+  "description": "A Chrome extension that converts AED to CAD on pages",
+  "version": "1.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsip/aed-to-cad.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.29",
+    "@sveltejs/vite-plugin-svelte": "5.0.3",
+    "@tsconfig/svelte": "5.0.4",
+    "@types/chrome": "0.0.289",
+    "postcss": "8.4.47",
+    "prettier": "^3.4.2",
+    "svelte": "5.16.2",
+    "svelte-check": "4.1.1",
+    "tailwindcss": "3.4.14",
+    "tslib": "2.8.1",
+    "typescript": "5.7.2",
+    "vite": "6.0.7"
+  }
 }
