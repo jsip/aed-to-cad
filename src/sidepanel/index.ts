@@ -1,5 +1,6 @@
 import { mount } from "svelte";
 import Calculator from "../components/Calculator.svelte";
+import "../tailwind.css";
 
 // Side panel
 // https://developer.chrome.com/docs/extensions/reference/sidePanel/
