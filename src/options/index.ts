@@ -1,11 +1,11 @@
 import { mount } from "svelte";
 import Options from "../components/Options.svelte";
-import { count } from "../storage";
+import { count } from "../utils/storage";
 
 // Options
 // https://developer.chrome.com/docs/extensions/mv3/options/
 
-function render() {
+const render = () => {
   const target = document.getElementById("app");
 
   if (target) {

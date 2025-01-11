@@ -1,11 +1,11 @@
 import { mount } from "svelte";
 import Options from "../components/Options.svelte";
-import { count } from "../storage";
+import { count } from "../utils/storage";
 
 // Side panel
 // https://developer.chrome.com/docs/extensions/reference/sidePanel/
 
-function render() {
+const render = () => {
   const target = document.getElementById("app");
 
   if (target) {

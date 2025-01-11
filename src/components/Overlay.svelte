@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { count } from "../storage";
+  import { count } from "../utils/storage";
   import Options from "./Options.svelte";
 </script>
 

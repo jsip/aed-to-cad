@@ -10,14 +10,14 @@ import { writable, type Updater, type Writable } from "svelte/store";
  * @param initialValue The initial value of the store
  * @returns A writable Svelte store
  */
-export function persistentStore<T>(key: string, initialValue: T): Writable<T> {
+export const persistentStore = <T>(key: string, initialValue: T): Writable<T> => {
   const store = writable<T>(initialValue);
 
-  function updateChromeStorage(value: T): void {
+  const updateChromeStorage = (value: T): void => {
     chrome.storage.sync.set({ [key]: value });
   }
 
-  function watchChromeStorage() {
+  const watchChromeStorage = () => {
     chrome.storage.sync.onChanged.addListener((changes) => {
       if (Object.hasOwn(changes, key)) {
         store.set(changes[key].newValue);
@@ -25,7 +25,7 @@ export function persistentStore<T>(key: string, initialValue: T): Writable<T> {
     });
   }
 
-  function initStoreFromChromeStorage() {
+  const initStoreFromChromeStorage = () => {
     chrome.storage.sync.get(key).then((result) => {
       if (Object.hasOwn(result, key)) {
         store.set(result[key]);

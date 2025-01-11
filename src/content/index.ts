@@ -1,6 +1,6 @@
 import { mount } from "svelte";
 import Overlay from "../components/Overlay.svelte";
-import { count } from "../storage";
+import { count } from "../utils/storage";
 
 // Content scripts
 // https://developer.chrome.com/docs/extensions/mv3/content_scripts/
