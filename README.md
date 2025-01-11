@@ -4,11 +4,11 @@ Boilerplated from [NekitCorp/chrome-extension-svelte-typescript-boilerplate](htt
 
 ```bash
 # install dev deps
-yarn
+$ yarn
 
 # build files to `/dist` directory
 # HMR for extension pages and content scripts
-yarn dev
+$ yarn dev
 ```
 
 ```bash
