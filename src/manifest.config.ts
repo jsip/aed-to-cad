@@ -12,7 +12,7 @@ const [major, minor, patch] = version
 
 export default defineManifest(async () => ({
   manifest_version: 3,
-  name: "AED to CAD conversion extension",
+  name: "AED/CAD <> CAD/AED",
   description: "Converts AED to CAD on webpages",
   version: `${major}.${minor}.${patch}`,
   version_name: version,

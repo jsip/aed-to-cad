@@ -6,3 +6,10 @@ import { AEDCADRate } from "./rate";
  * @returns {number} The amount in CAD
  */
 export const convertAEDtoCAD = (amount: number): number => amount * AEDCADRate();
+
+/**
+ * Converts an amount from CAD to AED
+ * @param {number} amount The amount in CAD
+ * @returns {number} The amount in AED
+ */
+export const convertCADtoAED = (amount: number): number => amount / AEDCADRate();
