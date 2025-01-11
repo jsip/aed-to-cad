@@ -31,10 +31,6 @@ export default defineManifest(async () => ({
   background: {
     service_worker: "src/background/index.ts",
   },
-  options_ui: {
-    page: "src/options/options.html",
-    open_in_tab: false,
-  },
   side_panel: {
     default_path: "src/sidepanel/sidepanel.html",
   },
@@ -46,5 +42,5 @@ export default defineManifest(async () => ({
       "128": "src/assets/icons/icon-128.png",
     },
   },
-  permissions: ["storage", "sidePanel"] as chrome.runtime.ManifestPermissions[],
+  permissions: ["sidePanel"] as chrome.runtime.ManifestPermissions[],
 }));
