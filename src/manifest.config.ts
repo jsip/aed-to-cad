@@ -39,7 +39,6 @@ export default defineManifest(async () => ({
     default_path: "src/sidepanel/sidepanel.html",
   },
   action: {
-    default_popup: "src/popup/popup.html",
     default_icon: {
       "16": "src/assets/icons/icon-16.png",
       "32": "src/assets/icons/icon-32.png",
