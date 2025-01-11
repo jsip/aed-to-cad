@@ -6,11 +6,11 @@ import { count } from "../storage";
 // https://developer.chrome.com/docs/extensions/reference/sidePanel/
 
 function render() {
-    const target = document.getElementById("app");
+  const target = document.getElementById("app");
 
-    if (target) {
-        mount(Options, { target, props: { count } });
-    }
+  if (target) {
+    mount(Options, { target, props: { count } });
+  }
 }
 
 document.addEventListener("DOMContentLoaded", render);
